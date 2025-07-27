@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Coze图表</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <style>
+        body { margin: 0; padding: 20px; background: white; font-family: Arial, sans-serif; }
+        #chart { width: 800px; height: 600px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+    <div id="chart"></div>
+    <script>
+        var chart = echarts.init(document.getElementById('chart'));
+        chart.setOption({"title": {"text": "销售数据", "left": "center"}, "tooltip": {}, "xAxis": {"type": "category", "data": ["一月", "二月", "三月", "四月", "五月"]}, "yAxis": {"type": "value"}, "series": [{"type": "bar", "data": [120, 200, 150, 80, 70], "itemStyle": {"color": "#5470c6"}}]});
+    </script>
+</body>
+</html>
