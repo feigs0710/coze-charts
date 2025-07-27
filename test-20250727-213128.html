@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试图表</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+    <div id="chart" style="width:800px;height:600px;"></div>
+    <script>
+        var chart = echarts.init(document.getElementById('chart'));
+        chart.setOption({{
+            title: {{text: 'GitHub Pages测试', left: 'center'}},
+            xAxis: {{type: 'category', data: ['A', 'B', 'C']}},
+            yAxis: {{type: 'value'}},
+            series: [{{type: 'bar', data: [10, 20, 30]}}]
+        }});
+    </script>
+</body>
+</html>
